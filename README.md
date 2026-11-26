@@ -44,6 +44,8 @@ Verified on EDA Playground using **Icarus Verilog 12.0** (`-Wall -g2012`):
 ```bash
 iverilog -Wall -g2012 rtl/counter.sv tb/tb_counter.sv -o sim/counter.out
 vvp sim/counter.out
+```
+
 ## Results
 
 To be added after tests are complete.
