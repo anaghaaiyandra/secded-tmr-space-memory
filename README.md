@@ -61,6 +61,7 @@ testbench.sv:110: $finish called at 446000 (1ps)
 
 [sim/counter_waveform.png]
 
+
 ## References
 
 See `docs/reading_notes.md` and the project reference sheet.
