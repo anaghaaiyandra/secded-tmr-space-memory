@@ -60,6 +60,7 @@ testbench.sv:110: $finish called at 446000 (1ps)
 ```
 
 [sim/counter_waveform.png]
+<img width="1837" height="202" alt="image" src="https://github.com/user-attachments/assets/15b4c762-a313-460d-b12d-1c488d7297d3" />
 
 
 ## References
