@@ -5,10 +5,11 @@ module counter (
 );
 
     always_ff @(posedge clk or negedge rst_n) begin
-        if (!rst_n)
+        if (!rst_n) begin
             count <= 4'd0;
-        else
-            count <= count + 1;
+        end else begin
+            count <= count + 4'd1;
+        end
     end
 
 endmodule
