@@ -24,6 +24,11 @@ Week 1: Setup and Hamming fundamentals — in progress
 - `docs/` — Design notes, hand calculations, verification plan, reports
 - `sim/` — Simulation scripts and waveform evidence
 
+## Conventions
+
+- **RTL / SystemVerilog:** 0-based bit indexing (e.g., `count[3:0]`, `codeword[38:0]`)
+- **Hamming math / docs:** 1-based bit positions (`1..38` for Hamming bits, `p0` for overall parity)
+
 ## How to run
 
 ### Python reference model
@@ -31,11 +36,6 @@ Week 1: Setup and Hamming fundamentals — in progress
 ```bash
 python model/test_hamming.py
 ```
-
-## Conventions
-
-- **RTL / SystemVerilog:** 0-based bit indexing (e.g., `count[3:0]`, `codeword[38:0]`)
-- **Hamming math / docs:** 1-based bit positions (`1..38` for Hamming bits, `p0` for overall parity)
 
 ### Simulator
 
@@ -48,7 +48,18 @@ vvp sim/counter.out
 
 ## Results
 
-To be added after tests are complete.
+### Week 1 — Tool Flow Smoke Test (`counter`)
+
+- **Status:** `SMOKE TEST PASSED` (`$finish` at `446000 ps`)
+- **Verified:** Synchronous reset hold, counting `0`–`15`, wraparound, mid-cycle asynchronous reset, and 20-cycle post-reset count (`count == 4`)
+
+```text
+VCD info: dumpfile dump.vcd opened for output.
+SMOKE TEST PASSED
+testbench.sv:110: $finish called at 446000 (1ps)
+```
+
+[sim/counter_waveform.png]
 
 ## References
 
