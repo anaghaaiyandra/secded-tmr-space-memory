@@ -39,7 +39,7 @@ module tb_counter;
     endtask
 
     initial begin
-        $dumpfile("counter_waveform.vcd");
+        $dumpfile("dump.vcd");
         $dumpvars(0, tb_counter);
 
         // Reset is asserted initially. Verify it after clock edges.
