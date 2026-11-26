@@ -32,10 +32,18 @@ Week 1: Setup and Hamming fundamentals — in progress
 python model/test_hamming.py
 ```
 
+## Conventions
+
+- **RTL / SystemVerilog:** 0-based bit indexing (e.g., `count[3:0]`, `codeword[38:0]`)
+- **Hamming math / docs:** 1-based bit positions (`1..38` for Hamming bits, `p0` for overall parity)
+
 ### Simulator
 
-Commands will be added after the simulator workflow is confirmed.
+Verified on EDA Playground using **Icarus Verilog 12.0** (`-Wall -g2012`):
 
+```bash
+iverilog -Wall -g2012 rtl/counter.sv tb/tb_counter.sv -o sim/counter.out
+vvp sim/counter.out
 ## Results
 
 To be added after tests are complete.
