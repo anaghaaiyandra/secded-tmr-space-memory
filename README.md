@@ -61,11 +61,14 @@ testbench.sv:110: $finish called at 446000 (1ps)
 
 [sim/counter_waveform.png]
 
-### Week 1 — Hand-Worked Hamming & SECDED Notes
+### Week 1 — Hamming & SECDED Fundamentals
 
-- Completed reading notes in `docs/reading_notes.md`
-- Worked `(15,11)` extended Hamming (with `p0` overall parity) encoding and single-bit error correction by hand in `docs/hamming15_11_worked.pdf`
+- Summarized core SEC/SECDED concepts and hardware trade-offs (Hamming 1950, Hsiao 1970, MIT 18.200) in `docs/reading_notes.md`
+- Worked a `(15,11)` + `p0` SECDED encode and single-bit error correction example by hand in `docs/hamming15_11_worked.pdf`
 
 ## References
 
-See `docs/reading_notes.md`, `docs/hamming15_11_worked.pdf`, and the project reference sheet.
+- `docs/reading_notes.md` — Reading notes (3Blue1Brown, Hamming 1950, MIT 18.200 Lecture 19, Hsiao 1970)
+- `docs/hamming15_11_worked.pdf` — Hand-worked `(15,11)` + `p0` SECDED example
+- R. W. Hamming (1950), *Error Detecting and Error Correcting Codes*
+- M. Y. Hsiao (1970), *A Class of Optimal Minimum Odd-weight-column SEC-DED Codes*, IBM Journal of Research and Development 14(4), 395–401
