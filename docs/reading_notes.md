@@ -3,7 +3,6 @@
 ## Sources
 - 3Blue1Brown — *Hamming Codes and Error Correction*
 - R. W. Hamming (1950) — *Error Detecting and Error Correcting Codes* (Introduction)
-- MIT 18.200 — *Lecture 19: Error-Correcting Codes—Hamming Codes*
 
 ## Key Takeaways
 1. **Power-of-2 parity placement:** Parity bits sit at 1-based positions `1, 2, 4, 8, ...` (`2^k`) so each parity bit has only a single `1` in its binary index. That keeps every parity check independent and lets each parity bit cover all positions sharing that bit in their binary index (e.g., `p1` covers `1, 3, 5, 7, ...`).
