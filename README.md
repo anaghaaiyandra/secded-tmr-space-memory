@@ -63,7 +63,7 @@ testbench.sv:110: $finish called at 446000 (1ps)
 
 ### Week 1 — Hamming & SECDED Fundamentals
 
-- Summarized core SEC/SECDED concepts and hardware trade-offs (Hamming 1950, Hsiao 1970, MIT 18.200) in `docs/reading_notes.md`
+- Summarized core SEC/SECDED concepts and hardware trade-offs (Hamming 1950, Hsiao 1970) in `docs/reading_notes.md`
 - Worked a `(15,11)` + `p0` SECDED encode and single-bit error correction example by hand in `docs/hamming15_11_worked.pdf`
 
 ## References
