@@ -6,7 +6,7 @@ and triple-modular-redundant control FSM in SystemVerilog.
 
 ## Status
 
-Week 1: Setup and Hamming fundamentals — in progress
+Week 1: Setup and Hamming fundamentals — Days 1–2 complete (Days 3–7 in progress)
 
 ## What this project does
 
@@ -18,11 +18,11 @@ Week 1: Setup and Hamming fundamentals — in progress
 
 ## Repository structure
 
-- `rtl/` — SystemVerilog design files
-- `tb/` — SystemVerilog testbenches
+- `rtl/` — SystemVerilog design files (`counter.sv`)
+- `tb/` — SystemVerilog testbenches (`tb_counter.sv`)
 - `model/` — Independent Python reference model and tests
-- `docs/` — Design notes, hand calculations, verification plan, reports
-- `sim/` — Simulation scripts and waveform evidence
+- `docs/` — Design notes (`reading_notes.md`), hand calculations (`hamming15_11_worked.pdf`), verification plan, reports
+- `sim/` — Simulation scripts and waveform evidence (`counter_waveform.png`)
 
 ## Conventions
 
@@ -60,9 +60,12 @@ testbench.sv:110: $finish called at 446000 (1ps)
 ```
 
 [sim/counter_waveform.png]
-<img width="1837" height="202" alt="image" src="https://github.com/user-attachments/assets/15b4c762-a313-460d-b12d-1c488d7297d3" />
 
+### Week 1 — Hand-Worked Hamming & SECDED Notes
+
+- Completed reading notes in `docs/reading_notes.md`
+- Worked `(15,11)` extended Hamming (with `p0` overall parity) encoding and single-bit error correction by hand in `docs/hamming15_11_worked.pdf`
 
 ## References
 
-See `docs/reading_notes.md` and the project reference sheet.
+See `docs/reading_notes.md`, `docs/hamming15_11_worked.pdf`, and the project reference sheet.
